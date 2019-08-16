@@ -1,0 +1,23 @@
+<head>
+  <link rel="stylesheet" href="../../public/stylesheets/normalize.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,700italic,700,300">
+  <!-- PASTE THE LINK CODE HERE -->
+  <link rel="stylesheet" href="../../public/stylesheets/lib.css">
+  <link rel="stylesheet" href="../../public/stylesheets/app.css">
+  <title>Finstagram</title>
+  
+</head>
+
+<header>  
+</header>
+  <% if current_user %>
+  <div class="new-finstagram-post">
+    <a href="/finstagram_posts/new" class="button">New Post</a>
+  </div>
+<% end %>
+
+<main role="main">
+  <% @finstagram_posts.each do |finstagram_post| %>
+   <%= erb(:"shared/finstagram_post", { locals: { finstagram_post: finstagram_post, allow_new_comment: false }}) %>
+<% end %>
+</main>

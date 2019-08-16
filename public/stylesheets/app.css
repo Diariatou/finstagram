@@ -1,0 +1,34 @@
+header{
+  background-color: #244751;
+  Color: #E8FDFF;
+}
+
+.Finstagram .login-info logout{
+ border: 40px 
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: 'DM Serif Display', serif;
+}
+
+main {
+  background-color: white;
+  padding: 16px;
+}
+
+.finstagram-post {
+  margin-bottom: 48px;
+}
+
+.finstagram-post .user-info img {
+  border-radius: 121px;
+}
+
+a.photo{
+  transition: padding 0.5s;
+}
+
+a.photo:hover{
+  padding: 10px;
+}
